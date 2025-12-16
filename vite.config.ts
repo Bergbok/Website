@@ -1,6 +1,7 @@
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
+import { generateCspPlugin } from 'vite-plugin-bun-csp';
 
 // https://vite.dev/config
 export default defineConfig({
@@ -26,6 +27,9 @@ export default defineConfig({
 			minify: {
 				collapseWhitespace: false
 			}
+		}),
+		generateCspPlugin({
+			algorithm: 'sha512'
 		}),
 		vue({
 			features: {
