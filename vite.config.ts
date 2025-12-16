@@ -7,5 +7,11 @@ export default defineConfig({
 	build: {
 		chunkSizeWarningLimit: 4200
 	},
-	plugins: [vue()]
+	plugins: [
+		vue({
+			features: {
+				optionsAPI: false
+			}
+		})
+	]
 });
