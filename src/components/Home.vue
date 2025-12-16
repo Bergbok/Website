@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import 'unfonts.css';
 import Color from 'color';
 import { ref, computed } from 'vue';
 import { iggyCursor } from 'iggy-cursor';
@@ -130,12 +131,6 @@ ghostCursor({
 	width: 100dvw;
 	height: 100dvh;
 	z-index: -1;
-}
-
-@font-face {
-	font-family: 'fraps';
-	src: url('./../assets/fonts/fraps.woff2') format('woff2');
-	font-style: normal;
 }
 
 .fps {

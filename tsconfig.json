@@ -27,7 +27,9 @@
 		// Some stricter flags (disabled by default)
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
-		"noPropertyAccessFromIndexSignature": false
+		"noPropertyAccessFromIndexSignature": false,
+
+		"types": ["unplugin-fonts/client"]
 	},
 	"extends": "@vue/tsconfig/tsconfig.dom.json"
 }
