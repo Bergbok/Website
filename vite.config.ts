@@ -12,19 +12,6 @@ export default defineConfig({
 	},
 	plugins: [
 		createHtmlPlugin({
-			inject: {
-				tags: [
-					{
-						tag: 'script',
-						injectTo: 'head',
-						attrs: {
-							defer: true,
-							src: 'https://static.cloudflareinsights.com/beacon.min.js',
-							'data-cf-beacon': '{"token": "10d08d6922c543a48fc40e5bde43611b"}'
-						}
-					}
-				]
-			},
 			minify: {
 				collapseWhitespace: false
 			}

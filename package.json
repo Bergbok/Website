@@ -1,19 +1,19 @@
 {
-	"name": "neocity",
+	"name": "website",
 	"private": true,
 	"type": "module",
 	"author": {
 		"name": "Bergbok",
 		"url": "https://github.com/Bergbok"
 	},
-	"homepage": "https://bergbok.neocities.org",
-	"repository": "github.com:Bergbok/Neocity",
-	"bugs": "https://github.com/Bergbok/Neocity/issues",
+	"homepage": "https://bergbok.computer",
+	"repository": "github.com:Bergbok/Website",
+	"bugs": "https://github.com/Bergbok/Website/issues",
 	"simple-git-hooks": {
-		"pre-commit": "bunx pretty-quick --staged && bunx dotenvx ext precommit"
+		"pre-commit": "bunx pretty-quick --staged"
 	},
 	"scripts": {
-		"deploy": "dotenvx run -- async-neocities --src dist",
+		"deploy": "wrangler deploy",
 		"dev": "vite",
 		"build": "vue-tsc -b && bun run --bun vite build",
 		"prettier": "prettier --write .",
@@ -30,12 +30,10 @@
 	},
 	"devDependencies": {
 		"@bergbok/prettier-config": "^1.1.0",
-		"@dotenvx/dotenvx": "^1.61.0",
-		"@types/bun": "latest",
+		"@types/bun": "^1.3.12",
 		"@vitejs/plugin-vue": "^6.0.6",
 		"@vue/tsconfig": "^0.9.1",
-		"async-neocities": "^4.1.2",
-		"prettier": "^3.8.2",
+		"prettier": "^3.8.3",
 		"pretty-quick": "^4.2.2",
 		"simple-git-hooks": "^2.13.1",
 		"typescript": "^6.0.2",
@@ -43,6 +41,12 @@
 		"vite": "^8.0.8",
 		"vite-plugin-bun-csp": "^2.1.1",
 		"vite-plugin-html": "^3.2.2",
-		"vue-tsc": "^3.2.6"
+		"vue-tsc": "^3.2.7",
+		"wrangler": "^4.84.0"
+	},
+	"overrides": {
+		"ani-cursor": "$ani-cursor",
+		"webamp": "0.0.0-next-3a898b4",
+		"winamp-eqf": "$winamp-eqf"
 	}
 }

@@ -52,9 +52,11 @@ jobs:
           name: dist
           path: dist
 
-      - name: Deploy to Neocities
-        uses: bcomnes/deploy-to-neocities@v3
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3.15.0
         with:
-          api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
-          cleanup: true
-          dist_dir: dist
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: latest
+          command: deploy
