@@ -1,4 +1,7 @@
 /.env
+/.vite
+/.wrangler/
 /artifacts/
 /dist/
 /node_modules/
+*.code-workspace
