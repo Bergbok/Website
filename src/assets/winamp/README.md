@@ -1,0 +1,23 @@
+> https://skins.webamp.org
+
+- [Ampboy](./AMPBOY.wsz) by [Ahmed Arebi](mailto:a_arebi@hotmail.com)
+- [Ascii](./Ascii.wsz) by [Pabo Wakataeo](mailto:pabo@section8.com)
+- [Claybox](./Claybox.wsz) by [Alexej Portnoff](mailto:portos@peterlink.ru)
+- [Crazy Color Amp](./Crazy%20Color%20Amp.wsz) by [Genius](mailto:fettgenius@gamestar.de)
+- [Crazy Winamp](./Crazy%20Winamp.wsz) by [Noam Shaharabani](noam15@surfree.net.il)
+- [Dark Green Evo](./Dark%20Green%20Evo.wsz) by [EJ](ejdj968@yahoo.co.uk)
+- [DiabloS](./DiabloS.wsz) by Oren Menache, updated by Sergei Belyayv.
+- [Dosamp](./Dosamp.wsz) by [Indy](mailto:indy720@hotmail.com)
+- [Fractal Amp](./Fractal_Amp_V1.wsz) by Kopie von
+- [Glare](./Glare.wsz) by [sixsixfive](https://github.com/sixsixfive) (CC BY-SA)
+- [HPCALC HP49Gg.wsz](./HPCALC%20HP49G.wsz) by [Arne Olav Storflor](mailto:astorflo@online.no)
+- [Internet Archive](./Internet%20Archive.wsz) by [LuigiHann](https://twitter.com/LuigiHann)
+- [Microchip 2](./Microchip%202.wsz) by [Vad3K](mailto:vad3k@hotmail.com)
+- [Photoshop 6.0](./Photoshop%206.0.wsz) by ronz
+- [Satori Reprise](./Satori%20Reprise.wsz) by Rommel VC Angeles
+- [Soul Reaver](./Soul%20Reaver.wsz) by Alberto Wagner
+- [Tux Amp](./Tux%20Amp.wsz) by [MegaMars](mailto:megamars@gmx.ch)
+- [Undertale](./Undertale.wsz) by [luigihann](https://twitter.com/luigihann)
+- [Virtual Hideout](./Virtual%20Hideout.wsz) by [maraz](mailto:maraz@raketti.net)
+- [Winamp XP.wsz](./Winamp%20XP.wsz) by [+L0+](mailto:theconquerer@gmx.de)
+- [Winzip.wsz](./Winzip.wsz) by [Mario Portuguez Castro](mailto:mario_portuguez@slayerized.com)
