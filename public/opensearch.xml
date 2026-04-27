@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<Description>(real)</Description>
+	<Developer>Bergbok</Developer>
+	<Image width="32" height="32" type="image/x-icon">https://bergbok.computer/favicon/google.ico</Image>
+	<InputEncoding>UTF-8</InputEncoding>
+	<Language>en-us</Language>
+	<Query role='example' searchTerms='( ͡° ͜ʖ ͡°)' />
+	<ShortName>Google</ShortName>
+	<Url type="application/x-suggestions+json" template="https://www.startpage.com/osuggestions?q=%s" />
+	<Url type="text/html" template="https://bergbok.computer/rickroll.webm" />
+</OpenSearchDescription>
