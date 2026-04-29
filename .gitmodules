@@ -1,0 +1,6 @@
+[submodule "src/lib/jspaint"]
+	path = src/lib/jspaint
+	url = https://github.com/1j01/jspaint.git
+[submodule "src/lib/pipes"]
+	path = src/lib/pipes
+	url = https://github.com/1j01/pipes.git
