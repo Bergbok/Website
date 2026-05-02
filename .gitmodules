@@ -4,3 +4,6 @@
 [submodule "src/lib/pipes"]
 	path = src/lib/pipes
 	url = https://github.com/1j01/pipes.git
+[submodule "src/lib/bassoontracker"]
+	path = src/lib/bassoontracker
+	url = https://github.com/steffest/BassoonTracker.git

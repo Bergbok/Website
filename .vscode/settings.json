@@ -1,3 +1,12 @@
 {
+	"files.associations": {
+		".assetsignore": "gitignore"
+	},
+	"search.useIgnoreFiles": true,
+	"search.exclude": {
+		"**/public/bassoontracker/**": true,
+		"**/public/jspaint/**": true,
+		"**/public/pipes/**": true
+	},
 	"typescript.tsdk": "node_modules/typescript/lib"
 }
