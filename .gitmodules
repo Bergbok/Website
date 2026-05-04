@@ -1,9 +1,12 @@
-[submodule "src/lib/jspaint"]
-	path = src/lib/jspaint
-	url = https://github.com/1j01/jspaint.git
-[submodule "src/lib/pipes"]
-	path = src/lib/pipes
-	url = https://github.com/1j01/pipes.git
 [submodule "src/lib/bassoontracker"]
 	path = src/lib/bassoontracker
 	url = https://github.com/steffest/BassoonTracker.git
+	ignore = dirty
+[submodule "src/lib/jspaint"]
+	path = src/lib/jspaint
+	url = https://github.com/1j01/jspaint.git
+	ignore = dirty
+[submodule "src/lib/pipes"]
+	path = src/lib/pipes
+	url = https://github.com/1j01/pipes.git
+	ignore = dirty
