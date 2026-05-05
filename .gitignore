@@ -1,3 +1,5 @@
+*.code-workspace
+*.tgz
 /.env
 /.vite
 /.wrangler/
@@ -5,4 +7,7 @@
 /dist/
 /.husky/_/
 /node_modules/
-*.code-workspace
+/src/assets/audio/dev/*
+!/src/assets/audio/dev/README.md
+/src/assets/images/cats/*
+!/src/assets/images/cats/*.avif
