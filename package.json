@@ -1,22 +1,21 @@
 {
 	"name": "website",
 	"private": true,
-	"type": "module",
+	"homepage": "https://bergbok.computer",
+	"bugs": "https://github.com/Bergbok/Website/issues",
 	"author": {
 		"name": "Bergbok",
 		"url": "https://github.com/Bergbok"
 	},
-	"homepage": "https://bergbok.computer",
 	"repository": "github.com:Bergbok/Website",
-	"bugs": "https://github.com/Bergbok/Website/issues",
-	"simple-git-hooks": {
-		"pre-commit": "bunx pretty-quick --staged"
-	},
+	"type": "module",
 	"scripts": {
+		"build": "vue-tsc -b && vite build",
 		"deploy": "wrangler deploy",
 		"dev": "vite",
-		"build": "vue-tsc -b && vite build",
-		"prettier": "prettier --write .",
+		"fmt": "oxfmt --disable-nested-config",
+		"fmt:check": "oxfmt --disable-nested-config --check",
+		"prepare": "husky",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -52,11 +51,11 @@
 		"@vitejs/plugin-vue": "^6.0.6",
 		"@vue/tsconfig": "^0.9.1",
 		"domutils": "^4.0.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.4.0",
+		"oxfmt": "^0.47.0",
 		"parse5": "^8.0.1",
 		"parse5-htmlparser2-tree-adapter": "^8.0.1",
-		"prettier": "^3.8.3",
-		"pretty-quick": "^4.2.2",
-		"simple-git-hooks": "^2.13.1",
 		"typescript": "^6.0.3",
 		"unplugin-fonts": "^2.0.0",
 		"vite": "^8.0.10",
@@ -71,5 +70,8 @@
 		"butterchurn-presets": "3.0.0-beta.4",
 		"webamp": "0.0.0-next-3a898b4",
 		"winamp-eqf": "$winamp-eqf"
+	},
+	"lint-staged": {
+		"*": "oxfmt --no-error-on-unmatched-pattern"
 	}
 }

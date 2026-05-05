@@ -3,5 +3,6 @@
 /.wrangler/
 /artifacts/
 /dist/
+/.husky/_/
 /node_modules/
 *.code-workspace

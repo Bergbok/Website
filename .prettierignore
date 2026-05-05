@@ -1,6 +1,0 @@
-*.wasm
-*.webm
-/artifacts/
-/src/lib/bassoontracker/
-/src/lib/jspaint/
-/src/lib/pipes/
