@@ -1,12 +1,18 @@
 version: 2
 updates:
+  - package-ecosystem: bun
+    directory: /
+    schedule:
+      interval: monthly
+      time: '09:00'
+      timezone: 'Africa/Johannesburg'
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
       time: '09:00'
       timezone: 'Africa/Johannesburg'
-  - package-ecosystem: bun
+  - package-ecosystem: gitsubmodule
     directory: /
     schedule:
       interval: monthly
