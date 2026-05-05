@@ -1,35 +1,58 @@
 {
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"include": ["src/**/*"],
+	"exclude": ["src/assets", "src/lib/jspaint", "src/lib/pipes", "src/lib/bassoontracker"],
 	"compilerOptions": {
-		// Environment setup & latest features
-		"lib": ["ESNext", "dom"],
-		"target": "ESNext",
-		"module": "Preserve",
-		"moduleDetection": "force",
-		"jsx": "react-jsx",
-		"allowJs": true,
-
-		// Bundler mode
-		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": true,
-		"verbatimModuleSyntax": true,
-		"noEmit": true,
-
-		// Projects
-		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-
-		// Best practices
+		// Type Checking
 		"strict": true,
-		"skipLibCheck": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
-
-		// Some stricter flags (disabled by default)
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false,
 
-		"types": ["unplugin-fonts/client"]
-	},
-	"extends": "@vue/tsconfig/tsconfig.dom.json"
+		// Modules
+		"module": "Preserve",
+		"allowImportingTsExtensions": true,
+		"moduleResolution": "bundler",
+
+		// Emit
+		"noEmit": true,
+
+		// JavaScript Support
+		"allowJs": true,
+
+		// Interop Constraints
+		"verbatimModuleSyntax": true,
+
+		// Language and Environment
+		"lib": ["ESNext", "dom"],
+		"target": "ESNext",
+		"moduleDetection": "force",
+		"jsx": "react-jsx",
+
+		// Projects
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+		// Completeness
+		"skipLibCheck": true,
+
+		"types": ["unplugin-fonts/client", "vite/client"],
+		"paths": {
+			"@assets*": ["./src/assets*"],
+			"@components*": ["./src/components*"],
+			"@composables*": ["./src/composables*"],
+			"@compunents*": ["./src/components/computer*"],
+			"@lib/*": ["./src/lib/*"],
+			"@os-gui": ["./src/components/computer/os-gui/index.ts"],
+			"@router": ["./src/router/router.ts"],
+			"@scripts": ["./src/scripts"],
+			"@store*": ["./src/store*"],
+			"@views": ["./src/views"],
+			"App.vue": ["./src/App.vue"],
+			"shaders": ["./node_modules/shaders/dist/vue/index.d.ts"],
+			"shaders/vue": ["./src/lib/shaders.ts"]
+		}
+	}
 }
