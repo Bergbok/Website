@@ -3,8 +3,7 @@ name: Build and deploy
 on:
   push:
     branches: [main]
-    paths:
-      [index.html, package.json, bun.lock, vite.config.ts, tsconfig.*, src/**, .github/workflows/publish.yml]
+    paths: [index.html, package.json, bun.lock, vite.config.ts, tsconfig.*, src/**, .github/workflows/publish.yml]
   workflow_dispatch:
 
 concurrency:
