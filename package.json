@@ -15,8 +15,11 @@
 		"dev": "vite",
 		"fmt": "oxfmt --disable-nested-config",
 		"fmt:check": "oxfmt --disable-nested-config --check",
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix",
 		"prepare": "husky",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"typegen": "wrangler types src/types/wrangler.d.ts"
 	},
 	"dependencies": {
 		"@unhead/vue": "^3.1.0",
@@ -54,6 +57,8 @@
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0",
 		"oxfmt": "^0.47.0",
+		"oxlint": "^1.62.0",
+		"oxlint-tsgolint": "^0.22.1",
 		"parse5": "^8.0.1",
 		"parse5-htmlparser2-tree-adapter": "^8.0.1",
 		"typescript": "^6.0.3",
@@ -72,6 +77,7 @@
 		"winamp-eqf": "$winamp-eqf"
 	},
 	"lint-staged": {
-		"*": "oxfmt --no-error-on-unmatched-pattern"
+		"*": "oxfmt --no-error-on-unmatched-pattern",
+		"*.{js,ts,vue}": "oxlint"
 	}
 }
