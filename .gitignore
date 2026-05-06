@@ -11,3 +11,4 @@
 !/src/assets/audio/dev/README.md
 /src/assets/images/cats/*
 !/src/assets/images/cats/*.avif
+/src/types/wrangler.d.ts
