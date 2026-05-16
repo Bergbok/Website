@@ -2,9 +2,17 @@
 	path = src/lib/bassoontracker
 	url = https://github.com/steffest/BassoonTracker.git
 	ignore = dirty
+[submodule "src/lib/fluidpaint"]
+	path = src/lib/fluidpaint
+	url = https://github.com/dli/paint.git
 [submodule "src/lib/jspaint"]
 	path = src/lib/jspaint
 	url = https://github.com/1j01/jspaint.git
+	ignore = dirty
+	ignore = dirty
+[submodule "src/lib/noclip"]
+	path = src/lib/noclip
+	url = https://github.com/magcius/noclip.website.git
 	ignore = dirty
 [submodule "src/lib/pipes"]
 	path = src/lib/pipes
