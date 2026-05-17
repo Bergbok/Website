@@ -1,12 +1,32 @@
 {
+	"editor.codeActionsOnSave": {
+		"source.fixAll.oxc": "explicit"
+	},
+	"editor.defaultFormatter": "oxc.oxc-vscode",
+	"editor.formatOnSave": true,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		".editorconfig": "oxfmt.config.ts, oxlint.config.ts, tsconfig.json",
+		".gitignore": ".git-blame-ignore-revs, .gitattributes, .gitmodules",
+		"package.json": ".dev.vars, bun.lock,  index.html, rsbuild.config.ts, vite.config.ts, wrangler.toml",
+		"README.md": "LICENSE.md"
+	},
 	"files.associations": {
-		".assetsignore": "gitignore"
+		".assetsignore": "ignore",
+		".dev.vars": "dotenv"
 	},
-	"search.useIgnoreFiles": true,
+	"git.ignoreSubmodules": true,
+	"js/ts.tsdk.path": "node_modules/typescript/lib",
+	"oxc.disableNestedConfig": true,
+	"oxc.fmt.configPath": "oxfmt.config.ts",
 	"search.exclude": {
-		"**/public/bassoontracker/**": true,
-		"**/public/jspaint/**": true,
-		"**/public/pipes/**": true
+		"public/bassoontracker": true,
+		"public/fluidpaint": true,
+		"public/jspaint": true,
+		"public/pipes": true,
+		"src/assets/games/space-cadet-pinball/SpaceCadetPinball.js": true,
+		"src/assets/games/the-powder-toy/powder.js": true
 	},
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"search.useIgnoreFiles": true
 }
