@@ -20,7 +20,6 @@ _headers
 **/license*
 **/node_modules
 **/package-lock.json
-**/package.json
 **/README*
 **/readme*
 **/TODO*
