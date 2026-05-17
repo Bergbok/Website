@@ -6,7 +6,7 @@
 	<InputEncoding>UTF-8</InputEncoding>
 	<Language>en-us</Language>
 	<Query role='example' searchTerms='( ͡° ͜ʖ ͡°)' />
-	<ShortName>Google</ShortName>
+	<ShortName>Google󠄀</ShortName>
 	<Url type="application/x-suggestions+json" template="https://www.startpage.com/osuggestions?q=%s" />
 	<Url type="text/html" template="https://bergbok.computer/rickroll.webm" />
 </OpenSearchDescription>
