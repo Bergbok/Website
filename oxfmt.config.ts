@@ -1,12 +1,14 @@
+import baseConfig from '@bergbok/prettier-config';
 import { defineConfig } from 'oxfmt';
 import type { OxfmtConfig } from 'oxfmt';
-import baseConfig from '@bergbok/prettier-config';
 
-baseConfig.overrides![0].files = ['*.yml'];
+baseConfig.overrides![0]!.files = ['*.yml'];
 
+// https://oxc.rs/docs/guide/usage/formatter/config-file-reference.html
 export default defineConfig({
 	...(baseConfig as OxfmtConfig),
 	bracketSameLine: true,
+	ignorePatterns: ['/src/lib/*/', '/src/types/cowsay.d.ts'],
 	jsdoc: {
 		bracketSpacing: false,
 		capitalizeDescriptions: false,
@@ -14,7 +16,6 @@ export default defineConfig({
 		lineWrappingStyle: 'balance'
 	},
 	jsxSingleQuote: true,
-	ignorePatterns: ['*.wasm', '*.webm', '/artifacts/', '/src/lib/*/', '/src/types/cowsay.d.ts'],
 	printWidth: 120,
 	quoteProps: 'consistent',
 	sortPackageJson: {

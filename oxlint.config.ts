@@ -14,7 +14,6 @@ export default defineConfig({
 		vue: true
 	},
 	ignorePatterns: [
-		'/artifacts/',
 		'/public/',
 		'/src/assets/games/the-powder-toy/powder.js',
 		'/src/assets/games/space-cadet-pinball/SpaceCadetPinball.js',
@@ -36,6 +35,12 @@ export default defineConfig({
 			files: ['src/router/router.ts'],
 			rules: {
 				'typescript/explicit-function-return-type': 'off'
+			}
+		},
+		{
+			files: ['src/store/webamp.ts'],
+			rules: {
+				'unicorn/no-await-expression-member': 'off'
 			}
 		},
 		{
