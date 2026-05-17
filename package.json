@@ -11,6 +11,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "vue-tsc -b && vite build",
+		"build:noclip": "rm -rf src/lib/noclip/dist && vue-tsc -b && vite build",
 		"deploy": "wrangler deploy",
 		"dev": "vite",
 		"fmt": "oxfmt --disable-nested-config",
@@ -24,7 +25,9 @@
 	"dependencies": {
 		"@unhead/vue": "^3.1.0",
 		"@videojs-player/vue": "^1.0.0",
+		"@vuepic/vue-datepicker": "^12.1.0",
 		"@vueuse/core": "^14.3.0",
+		"@vueuse/integrations": "^14.3.0",
 		"ani-cursor": "^0.0.5",
 		"butterchurn-presets": "^2.4.7",
 		"color": "^5.0.3",
@@ -38,9 +41,11 @@
 		"os-gui": "^0.7.3",
 		"pinia": "^3.0.4",
 		"shaders": "^2.5.111",
+		"sortablejs": "^1.15.7",
 		"v86": "^0.5.357",
 		"video.js": "^8.23.7",
 		"vue": "^3.5.33",
+		"vue-color": "^3.3.3",
 		"vue-router": "^5.0.6",
 		"webamp": "^2.2.0",
 		"winamp-eqf": "^1.0.0"
@@ -51,6 +56,7 @@
 		"@types/bun": "^1.3.13",
 		"@types/howler": "^2.2.12",
 		"@types/konami-code-js": "^0.8.3",
+		"@types/sortablejs": "^1.15.9",
 		"@types/video.js": "^7.3.58",
 		"@vitejs/plugin-vue": "^6.0.6",
 		"@vue/tsconfig": "^0.9.1",
@@ -67,7 +73,6 @@
 		"vite": "^8.0.10",
 		"vite-plugin-html": "^3.2.2",
 		"vite-plugin-vue-devtools": "^8.1.1",
-		"vite-plugin-vue-inspector": "^5.4.0",
 		"vue-tsc": "^3.2.8",
 		"wrangler": "^4.87.0"
 	},
