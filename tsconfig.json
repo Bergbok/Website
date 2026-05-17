@@ -1,7 +1,7 @@
 {
 	"extends": "@vue/tsconfig/tsconfig.dom.json",
-	"include": ["src/**/*"],
-	"exclude": ["src/assets", "src/lib/jspaint", "src/lib/pipes", "src/lib/bassoontracker"],
+	"include": ["*.ts", "src/**/*.ts", "src/**/*.vue"],
+	"exclude": ["src/assets", "src/lib/*/"],
 	"compilerOptions": {
 		// Type Checking
 		"strict": true,
@@ -30,7 +30,6 @@
 		"lib": ["ESNext", "dom"],
 		"target": "ESNext",
 		"moduleDetection": "force",
-		"jsx": "react-jsx",
 
 		// Projects
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
@@ -47,12 +46,13 @@
 			"@lib/*": ["./src/lib/*"],
 			"@os-gui": ["./src/components/computer/os-gui/index.ts"],
 			"@router": ["./src/router/router.ts"],
-			"@scripts": ["./src/scripts"],
+			"@rsbuild/core": ["./src/lib/noclip/node_modules/@rsbuild/core/dist-types/index.d.ts"],
+			"@scripts*": ["./src/scripts*"],
 			"@store*": ["./src/store*"],
-			"@views": ["./src/views"],
+			"@views*": ["./src/views*"],
 			"App.vue": ["./src/App.vue"],
-			"shaders": ["./node_modules/shaders/dist/vue/index.d.ts"],
-			"shaders/vue": ["./src/lib/shaders.ts"]
+			"shaders/vue": ["./src/lib/shaders.ts"],
+			"shaders": ["./node_modules/shaders/dist/vue/index.d.ts"]
 		}
 	}
 }
