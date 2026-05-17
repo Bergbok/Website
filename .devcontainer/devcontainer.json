@@ -1,0 +1,18 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"features": {
+		"ghcr.io/devcontainers/features/node:2": {},
+		"ghcr.io/devcontainers/features/rust:1": {
+			"targets": "wasm32-unknown-unknown"
+		},
+		"ghcr.io/devcontainers-extra/features/bun:1": {},
+		"ghcr.io/devcontainers-extra/features/fish-apt-get:1": {}
+	},
+	"postCreateCommand": "bun install && cd src/lib/noclip/rust && cargo install cargo-run-bin && cargo bin --install",
+	"forwardPorts": [4173, 5173],
+	"customizations": {
+		"vscode": {
+			"extensions": ["editorconfig.editorconfig", "oxc.oxc-vscode", "pixl-garden.BongoCat", "vue.volar"]
+		}
+	}
+}
