@@ -18,3 +18,7 @@
 	path = src/lib/pipes
 	url = https://github.com/1j01/pipes.git
 	ignore = dirty
+[submodule "src/lib/sgi-demos"]
+	path = src/lib/sgi-demos
+	url = https://github.com/sgi-demos/sgi-demos.git
+	ignore = dirty
