@@ -20,8 +20,8 @@ _headers
 **/license*
 **/node_modules
 **/package-lock.json
-**/README*
-**/readme*
+**/README.md
+**/readme.md
 **/TODO*
 **/vite.config*
 
