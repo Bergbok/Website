@@ -23,6 +23,7 @@
 		"typegen": "wrangler types src/types/wrangler.d.ts"
 	},
 	"dependencies": {
+		"@cosmograph/cosmograph": "^2.3.2",
 		"@unhead/vue": "^3.1.0",
 		"@videojs-player/vue": "^1.0.0",
 		"@vuepic/vue-datepicker": "^12.1.0",
@@ -38,8 +39,10 @@
 		"howler": "^2.2.4",
 		"iggy-cursor": "^1.2.0",
 		"konami-code-js": "^0.8.3",
+		"nprogress": "^0.2.0",
 		"os-gui": "^0.7.3",
 		"pinia": "^3.0.4",
+		"pixi.js": "^8.18.1",
 		"shaders": "^2.5.111",
 		"sortablejs": "^1.15.7",
 		"v86": "^0.5.357",
@@ -56,6 +59,7 @@
 		"@types/bun": "^1.3.13",
 		"@types/howler": "^2.2.12",
 		"@types/konami-code-js": "^0.8.3",
+		"@types/nprogress": "^0.2.3",
 		"@types/sortablejs": "^1.15.9",
 		"@types/video.js": "^7.3.58",
 		"@vitejs/plugin-vue": "^6.0.6",
