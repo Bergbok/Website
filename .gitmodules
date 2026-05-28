@@ -14,6 +14,14 @@
 	path = src/lib/noclip
 	url = https://github.com/magcius/noclip.website.git
 	ignore = dirty
+[submodule "src/lib/oimo"]
+	path = src/lib/oimo
+	url = https://github.com/saharan/works.git
+	ignore = dirty
+[submodule "src/lib/oimo/libs"]
+	path = src/lib/oimo/libs
+	url = https://github.com/saharan/haxelibs.git
+	ignore = dirty
 [submodule "src/lib/pipes"]
 	path = src/lib/pipes
 	url = https://github.com/1j01/pipes.git
