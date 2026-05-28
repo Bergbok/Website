@@ -3,6 +3,7 @@
 	"private": true,
 	"homepage": "https://bergbok.computer",
 	"bugs": "https://github.com/Bergbok/Website/issues",
+	"license": "ISC",
 	"author": {
 		"name": "Bergbok",
 		"url": "https://github.com/Bergbok"
