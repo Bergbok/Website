@@ -1,14 +1,39 @@
+[submodule "src/lib/animalcrossing"]
+	path = src/lib/animalcrossing
+	url = https://github.com/turtlekiosk/slider.git
+	branch = wasm
+	ignore = dirty
 [submodule "src/lib/bassoontracker"]
 	path = src/lib/bassoontracker
 	url = https://github.com/steffest/BassoonTracker.git
 	ignore = dirty
+[submodule "src/lib/celeste"]
+	path = src/lib/celeste
+	url = https://github.com/MercuryWorkshop/celeste-wasm.git
+	ignore = dirty
+[submodule "src/lib/diablo"]
+	path = src/lib/diablo
+	url = https://github.com/awest813/OpenTristam.git
+	ignore = dirty
+[submodule "src/lib/doom"]
+	path = src/lib/doom
+	url = https://github.com/GMH-Code/Dwasm.git
+	ignore = dirty
 [submodule "src/lib/fluidpaint"]
 	path = src/lib/fluidpaint
 	url = https://github.com/dli/paint.git
+	ignore = dirty
+[submodule "src/lib/godot"]
+	path = src/lib/godot
+	url = https://github.com/godotengine/godot.git
+	branch = 4.6
 [submodule "src/lib/jspaint"]
 	path = src/lib/jspaint
 	url = https://github.com/1j01/jspaint.git
 	ignore = dirty
+[submodule "src/lib/minecraft"]
+	path = src/lib/minecraft
+	url = https://github.com/SajagIN/Minecraft-classic.git
 	ignore = dirty
 [submodule "src/lib/noclip"]
 	path = src/lib/noclip
@@ -22,11 +47,39 @@
 	path = src/lib/oimo/libs
 	url = https://github.com/saharan/haxelibs.git
 	ignore = dirty
+[submodule "src/lib/openrct2"]
+	path = src/lib/openrct2
+	url = https://github.com/OpenRCT2/OpenRCT2.git
+	ignore = dirty
+[submodule "src/lib/openttd"]
+	path = src/lib/openttd
+	url = https://github.com/swords02/openttd-online.git
+	ignore = dirty
 [submodule "src/lib/pipes"]
 	path = src/lib/pipes
 	url = https://github.com/1j01/pipes.git
 	ignore = dirty
+[submodule "src/lib/quake"]
+	path = src/lib/quake
+	url = https://github.com/GMH-Code/Qwasm.git
+	ignore = dirty
+[submodule "src/lib/quake2"]
+	path = src/lib/quake2
+	url = https://github.com/GMH-Code/Qwasm2.git
+	ignore = dirty
 [submodule "src/lib/sgi-demos"]
 	path = src/lib/sgi-demos
 	url = https://github.com/sgi-demos/sgi-demos.git
+	ignore = dirty
+[submodule "src/lib/spacecadetpinball"]
+	path = src/lib/spacecadetpinball
+	url = https://github.com/alula/SpaceCadetPinball.git
+	ignore = dirty
+[submodule "src/lib/thepowdertoy"]
+	path = src/lib/thepowdertoy
+	url = https://github.com/The-Powder-Toy/The-Powder-Toy.git
+	ignore = dirty
+[submodule "src/lib/wipEout"]
+	path = src/lib/wipEout
+	url = https://github.com/phoboslab/wipeout-rewrite.git
 	ignore = dirty
