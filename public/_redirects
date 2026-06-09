@@ -1,2 +1,11 @@
+/doom/index.data /r2/doom/index.data 301
 /favicon /favicon/favicon.avif 301
 /favicon.ico /favicon/favicon.avif 301
+/godot/godot.editor.wasm /r2/godot.editor.wasm 301
+/plants-vs-zombies/plants-vs-zombies.data /r2/plants-vs-zombies.data 301
+/quake/gl/index.data /r2/quake/gl/index.data 301
+/quake/id1/pak0.pak /r2/quake/id1/pak0.pak 301
+/quake/index.data /r2/quake/index.data 301
+/quake2/index.data /r2/quake2/index.data 301
+/rss /rss.xml 301
+/wipEout/wipeout.data /r2/wipeout.data 301
