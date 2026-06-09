@@ -1,6 +1,7 @@
 {
 	"extends": "@vue/tsconfig/tsconfig.dom.json",
 	"include": ["*.ts", "src/**/*.ts", "src/**/*.vue"],
+	"files": ["src/lib/windows93/worker.ts"],
 	"exclude": ["src/assets", "src/lib/*/"],
 	"compilerOptions": {
 		// Type Checking
@@ -8,8 +9,8 @@
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		"noPropertyAccessFromIndexSignature": false,
 
 		// Modules
@@ -49,6 +50,7 @@
 			"@rsbuild/core": ["./src/lib/noclip/node_modules/@rsbuild/core/dist-types/index.d.ts"],
 			"@scripts*": ["./src/scripts*"],
 			"@store*": ["./src/store*"],
+			"@typings*": ["./src/types*"],
 			"@views*": ["./src/views*"],
 			"App.vue": ["./src/App.vue"],
 			"shaders/vue": ["./src/lib/shaders.ts"],
