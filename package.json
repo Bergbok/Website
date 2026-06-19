@@ -24,6 +24,7 @@
 		"typegen": "wrangler types src/types/wrangler.d.ts"
 	},
 	"dependencies": {
+		"@cloudflare/actors": "^0.0.1-beta.6",
 		"@cosmograph/cosmograph": "^2.3.2",
 		"@unhead/vue": "^3.1.0",
 		"@videojs-player/vue": "^1.0.0",
@@ -73,6 +74,7 @@
 		"@vitejs/plugin-vue": "^6.0.6",
 		"@vue/tsconfig": "^0.9.1",
 		"domutils": "^4.0.2",
+		"glob": "^13.0.6",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0",
 		"oxfmt": "^0.47.0",
