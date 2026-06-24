@@ -56,6 +56,7 @@
 		"v86": "^0.5.357",
 		"video.js": "^8.23.7",
 		"vue": "^3.5.33",
+		"vue-cloudflare-turnstile": "^1.0.3",
 		"vue-color": "^3.3.3",
 		"vue-router": "^5.0.6",
 		"vue-virtual-scroller": "^3.0.4",

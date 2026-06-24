@@ -37,6 +37,7 @@
         "v86": "^0.5.357",
         "video.js": "^8.23.7",
         "vue": "^3.5.33",
+        "vue-cloudflare-turnstile": "^1.0.3",
         "vue-color": "^3.3.3",
         "vue-router": "^5.0.6",
         "vue-virtual-scroller": "^3.0.4",
@@ -1827,6 +1828,8 @@
     "vscode-uri": ["vscode-uri@3.1.0", "", {}, "sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ=="],
 
     "vue": ["vue@3.5.33", "", { "dependencies": { "@vue/compiler-dom": "3.5.33", "@vue/compiler-sfc": "3.5.33", "@vue/runtime-dom": "3.5.33", "@vue/server-renderer": "3.5.33", "@vue/shared": "3.5.33" }, "peerDependencies": { "typescript": "*" }, "optionalPeers": ["typescript"] }, "sha512-1AgChhx5w3ALgT4oK3acm2Es/7jyZhWSVUfs3rOBlGQC0rjEDkS7G4lWlJJGGNQD+BV3reCwbQrOe1mPNwKHBQ=="],
+
+    "vue-cloudflare-turnstile": ["vue-cloudflare-turnstile@1.0.3", "", { "peerDependencies": { "vue": "^3.3.0" } }, "sha512-VHMuHEvpS4hsYYZh5odbR3Nf9nJIQiVLGAeo+HH/Tv4k+fGx5xsvrwS89you1EPakqTS0xbpoKhLuPkGHPv6wA=="],
 
     "vue-color": ["vue-color@3.3.3", "", { "dependencies": { "material-colors": "^1.2.6", "tinycolor2": "^1.6.0" }, "peerDependencies": { "vue": ">=2.7.0 <4.0.0" } }, "sha512-FW/9JXFbCHfFEGv6SFUuK/SE+K61pHoL7lxJMQXcU+Zt7s36Ui1/tMDc3vzGXPrxxRBB+NSzFt+71nEaUJ29dQ=="],
 
