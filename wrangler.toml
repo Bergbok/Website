@@ -1,6 +1,7 @@
 name = 'homepage'
-main = 'src/worker.ts'
-compatibility_date = '2025-12-18'
+main = 'src/server/worker.ts'
+compatibility_date = '2026-04-20'
+compatibility_flags = ['nodejs_compat']
 workers_dev = false
 preview_urls = false
 routes = [{ pattern = 'bergbok.computer', custom_domain = true }]
@@ -8,3 +9,82 @@ routes = [{ pattern = 'bergbok.computer', custom_domain = true }]
 [assets]
 binding = 'ASSETS'
 not_found_handling = 'single-page-application'
+run_worker_first = [
+	'/',
+	'/cat',
+	'/deep-thought/*',
+	'/diablo-relay',
+	'/eightyeightthirtyone/*',
+	'/guestbook/*',
+	'/hydra-server',
+	'/livestreams',
+	'/noclip/assets/*',
+	'/r2/*',
+	'/releases/*',
+	'/steam/widget/*',
+	'/tally',
+	'/teapot',
+	'/twitch.js',
+	'/v86/*',
+	'/version',
+	'/visits'
+]
+
+[[d1_databases]]
+binding = 'D1'
+database_name = 'computer'
+database_id = '52f5a05b-79ee-4ded-900b-efd1d20316d9'
+
+[durable_objects]
+bindings = [
+	{ name = 'DIABLO', class_name = 'Diablo' },
+	{ name = 'HYDRA', class_name = 'HydraServer' },
+	{ name = 'TALLY', class_name = 'Tally' }
+]
+
+[[migrations]]
+tag = 'v1'
+new_sqlite_classes = ['Diablo', 'HydraServer', 'Tally']
+
+[[kv_namespaces]]
+binding = 'KV'
+id = '20b416cf2be64b68ba18e548fdfb6c74'
+
+[observability]
+logs = { enabled = true }
+
+[[ratelimits]]
+name = "GUESTBOOK_LIMITER"
+namespace_id = "1"
+
+[ratelimits.simple]
+limit = 1
+period = 60
+
+[[r2_buckets]]
+binding = 'R2'
+bucket_name = 'computer'
+remote = true
+
+[secrets]
+required = [
+	'ACCESS_API_TOKEN',
+	'ACCESS_APP_ID',
+	'ACCESS_ZONE_ID',
+	'TURN_KEY_ID',
+	'TURN_KEY_API_TOKEN',
+	'TURNSTILE_KEY',
+	'TWITCH_CLIENT_ID',
+	'TWITCH_CLIENT_SECRET'
+]
+
+[triggers]
+crons = ['0/5 * * * *']
+
+[version_metadata]
+binding = 'CF_VERSION_METADATA'
+
+[[vpc_services]]
+binding = 'DASHDOT'
+service_id = '019eda2a-44b6-7bb2-990f-fc7a667028b2'
+remote = true
