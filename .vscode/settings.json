@@ -8,7 +8,7 @@
 	"explorer.fileNesting.expand": false,
 	"explorer.fileNesting.patterns": {
 		".editorconfig": "oxfmt.config.ts, oxlint.config.ts, tsconfig.json",
-		".gitignore": ".git-blame-ignore-revs, .gitattributes, .gitmodules",
+		".gitmodules": ".git-blame-ignore-revs, .gitattributes, .gitignore",
 		"package.json": ".dev.vars, bun.lock,  index.html, rsbuild.config.ts, vite.config.ts, wrangler.toml",
 		"README.md": "LICENSE.md"
 	},
@@ -21,12 +21,13 @@
 	"oxc.disableNestedConfig": true,
 	"oxc.fmt.configPath": "oxfmt.config.ts",
 	"search.exclude": {
-		"public/bassoontracker": true,
-		"public/fluidpaint": true,
-		"public/jspaint": true,
-		"public/pipes": true,
-		"src/assets/games/space-cadet-pinball/SpaceCadetPinball.js": true,
-		"src/assets/games/the-powder-toy/powder.js": true
+		"**/*.js*": true,
+		"**/*.wasm*": true,
+		"**/bun.lock": true,
+		"**/package-lock.json": true,
+		"**/pnpm-lock.yaml": true,
+		"public": true,
+		"src/assets/games": true
 	},
 	"search.useIgnoreFiles": true
 }
