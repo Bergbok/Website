@@ -3,12 +3,13 @@ _routes.json
 _redirects
 _headers
 
+**/*.sh
 **/.editorconfig
 **/.git
 **/.gitattributes
 **/.github
 **/.gitignore
-**/.gitignore
+**/.gitkeep
 **/.prettierignore
 **/.prettierrc.json
 **/.vscode
@@ -18,6 +19,8 @@ _headers
 **/CONTRIBUTING*
 **/LICENSE*
 **/license*
+**/Makefile
+**/Makefile.orig
 **/node_modules
 **/package-lock.json
 **/README.md
@@ -29,6 +32,10 @@ bassoontracker/dev.html
 bassoontracker/docs
 bassoontracker/Gruntfile.js
 bassoontracker/version.txt
+
+doom/index.data
+
+godot/godot.editor.wasm
 
 jspaint/browserconfig.xml
 jspaint/CLI.md
@@ -46,3 +53,23 @@ jspaint/scripts
 jspaint/svg-paint
 jspaint/sync-package.js
 jspaint/test-news-newer.html
+
+quake/index.data
+quake/id1/pak0.pak
+quake/gl/index.data
+
+quake2/index.data
+
+sgi-demos/**/*.c
+sgi-demos/**/*.cps
+sgi-demos/**/*.h
+sgi-demos/**/*.info
+sgi-demos/**/*.j
+sgi-demos/**/*.mk
+sgi-demos/**/*.rec
+
+silk/favicon.ico
+
+spacecadetpinball/SpaceCadetPinball.html
+
+wipEout/wipeout.data
