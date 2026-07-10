@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="48" viewBox="0 0 67.733724 11.538744" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<g fill="#bababa">
+		<text
+			x="0"
+			y="4.4"
+			font-family="Segoe UI, Segoe Ui, sans-serif"
+			font-size="6"
+			letter-spacing="-0.12px"
+			xml:space="preserve">
+		Uninstall Windows
+	</text>
+		<text
+			x="1.5"
+			y="11"
+			font-family="Segoe UI, Segoe Ui, sans-serif"
+			font-size="4.6"
+			letter-spacing="-0.1px"
+			xml:space="preserve">
+		Switch to Linux already
+	</text>
+	</g>
+</svg>
