@@ -55,7 +55,7 @@
 		"pixi.js": "^8.18.1",
 		"rss": "^1.2.2",
 		"rtc-patch-bay": "^1.0.1",
-		"shaders": "^2.5.111",
+		"shaders": "^2.5.135",
 		"sortablejs": "^1.15.7",
 		"v86": "^0.5.357",
 		"video.js": "^8.23.7",
@@ -96,7 +96,7 @@
 		"vite-plugin-html": "^3.2.2",
 		"vite-plugin-vue-devtools": "^8.1.1",
 		"vue-tsc": "^3.2.8",
-		"wrangler": "^4.87.0"
+		"wrangler": "^4.110.0"
 	},
 	"overrides": {
 		"ani-cursor": "$ani-cursor",
