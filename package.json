@@ -106,6 +106,6 @@
 	},
 	"lint-staged": {
 		"*": "oxfmt --no-error-on-unmatched-pattern",
-		"*.{js,ts,vue}": "oxlint"
+		"*.{js,ts,vue}": "oxlint --no-error-on-unmatched-pattern"
 	}
 }
