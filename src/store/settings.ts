@@ -11,13 +11,13 @@ export const useSettingsStore = defineStore('settings', () => {
 
 	const background = useLocalStorage('settings:background', 2);
 	const backgroundFit = useLocalStorage<WallpaperFit>('settings:backgroundFit', 'cover');
-	const enableWallpaperShader = useLocalStorage('settings:enableWallpaperShader', false);
-	const customWallpaperUrl = useLocalStorage<string | null>('settings:customWallpaperUrl', null);
+	const enableBackgroundShader = useLocalStorage('settings:enableBackgroundShader', true);
+	const customBackgroundUrl = useLocalStorage<string | null>('settings:customBackgroundUrl', null);
 
 	const wallpaper = useLocalStorage('settings:wallpaper', 1);
 	const wallpaperFit = useLocalStorage<WallpaperFit>('settings:wallpaperFit', 'cover');
-	const enableBackgroundShader = useLocalStorage('settings:enableBackgroundShader', true);
-	const customBackgroundUrl = useLocalStorage<string | null>('settings:customBackgroundUrl', null);
+	const enableWallpaperShader = useLocalStorage('settings:enableWallpaperShader', false);
+	const customWallpaperUrl = useLocalStorage<string | null>('settings:customWallpaperUrl', null);
 
 	const title = useLocalStorage(
 		'settings:title',
@@ -34,7 +34,7 @@ export const useSettingsStore = defineStore('settings', () => {
 		enableIconLabels.value = true;
 		enableNeonIcons.value = true;
 		enableShaders.value = true;
-		enableWallpaperShader.value = true;
+		enableWallpaperShader.value = false;
 		title.value = window.location.hostname === 'localhost' ? 'localhost' : 'hello, computer user';
 		wallpaper.value = 1;
 		wallpaperFit.value = 'cover';
