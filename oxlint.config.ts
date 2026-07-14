@@ -13,7 +13,15 @@ export default defineConfig({
 		browser: true,
 		vue: true
 	},
-	ignorePatterns: ['**/*.js', '**/*.mjs', '/public/', '/src/lib/*/', '/src/types/cowsay.d.ts'],
+	ignorePatterns: [
+		'**/*.js',
+		'**/*.jsx',
+		'**/*.mjs',
+		'**/compiler_depend.ts',
+		'/public/',
+		'/src/lib/*/',
+		'/src/types/cowsay.d.ts'
+	],
 	options: {
 		maxWarnings: 42,
 		typeAware: true
@@ -38,13 +46,12 @@ export default defineConfig({
 				'eslint/no-empty-function': 'off',
 				'eslint/no-underscore-dangle': 'off',
 				'promise/prefer-await-to-callbacks': 'off',
-				'typescript/no-explicit-any': 'off',
 				'unicorn/consistent-function-scoping': 'off',
 				'unicorn/prefer-add-event-listener': 'off'
 			}
 		},
 		{
-			files: ['src/assets/games/spacecadetpinball/bridge.ts'],
+			files: ['src/assets/games/spacecadetpinball/bridge.ts', 'src/types/plants-vs-zombies.d.ts'],
 			rules: {
 				'typescript/no-explicit-any': 'off'
 			}
@@ -71,7 +78,14 @@ export default defineConfig({
 			files: ['src/components/computer/apps/Hydra.vue'],
 			rules: {
 				'eslint/no-alert': 'off',
+				'eslint/no-await-in-loop': 'off',
 				'eslint/no-new-func': 'off'
+			}
+		},
+		{
+			files: ['src/components/computer/apps/Namegen.vue'],
+			rules: {
+				'promise/avoid-new': 'off'
 			}
 		},
 		{
