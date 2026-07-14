@@ -6,13 +6,18 @@ import buildOimo from './src/scripts/buildOimo.ts';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import buildGodot from './src/scripts/buildGodot.ts';
 import buildQuake from './src/scripts/buildQuake.ts';
-import buildQuake2 from './src/scripts/buildQuake2.ts';
 import buildDiablo from './src/scripts/buildDiablo.ts';
 import buildNoclip from './src/scripts/buildNoclip.ts';
+import buildQuake2 from './src/scripts/buildQuake2.ts';
 import buildCeleste from './src/scripts/buildCeleste.ts';
+import buildNamegen from './src/scripts/buildNamegen.ts';
 import buildWipEout from './src/scripts/buildWipEout.ts';
+import buildBathBomb from './src/scripts/buildBathBomb.ts';
 import buildOpenRCT2 from './src/scripts/buildOpenRCT2.ts';
+import buildUntrusted from './src/scripts/buildUntrusted.ts';
+import buildCrossyRoad from './src/scripts/buildCrossyRoad.ts';
 import patchSubmodules from './src/scripts/patchSubmodules.ts';
+import buildMarbleBlast from './src/scripts/buildMarbleBlast.ts';
 import buildThePowderToy from './src/scripts/buildThePowderToy.ts';
 import buildAnimalCrossing from './src/scripts/buildAnimalCrossing.ts';
 import buildBassoonTracker from './src/scripts/buildBassoonTracker.ts';
@@ -45,23 +50,29 @@ export default defineConfig(({ command }) => ({
 		}
 	},
 	define: {
-		global: 'globalThis'
+		global: 'globalThis',
+		__TURNSTILE_SITEKEY__: JSON.stringify('0x4AAAAAADqYxThyuyGUYppO')
 	},
 	plugins: [
 		command === 'build' && buildSpaceCadetPinball(),
 		command === 'build' && buildBassoonTracker(),
 		command === 'build' && buildAnimalCrossing(),
 		command === 'build' && buildThePowderToy(),
+		command === 'build' && buildMarbleBlast(),
+		command === 'build' && buildCrossyRoad(),
+		command === 'build' && buildUntrusted(),
 		command === 'build' && buildOpenRCT2(),
+		command === 'build' && buildBathBomb(),
 		command === 'build' && buildWipEout(),
+		command === 'build' && buildNamegen(),
 		command === 'build' && buildCeleste(),
-		command === 'build' && buildDiablo(),
 		command === 'build' && buildNoclip(),
 		command === 'build' && buildQuake2(),
+		command === 'build' && buildDiablo(),
 		command === 'build' && buildQuake(),
 		command === 'build' && buildGodot(),
-		command === 'build' && buildDoom(),
 		command === 'build' && buildOimo(),
+		command === 'build' && buildDoom(),
 		command === 'build' && buildRSS(),
 		command === 'build' &&
 			createHtmlPlugin({
