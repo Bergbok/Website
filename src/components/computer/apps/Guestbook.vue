@@ -3,8 +3,9 @@ import 'vue-virtual-scroller/index.css';
 import Turnstile from 'vue-cloudflare-turnstile';
 import AppWindow from '@compunents/AppWindow.vue';
 import { Button, MenuBar } from '@os-gui';
-import { computed, onMounted, ref, useTemplateRef } from 'vue';
-import { formatTimeAgo, get, useCountdown } from '@vueuse/core';
+import { useAppOpen } from '@composables/useApp.ts';
+import { computed, ref, useTemplateRef, watch } from 'vue';
+import { formatTimeAgo, get, useCountdown, useFetch } from '@vueuse/core';
 import { DynamicScroller, DynamicScrollerItem } from 'vue-virtual-scroller';
 
 interface GuestbookMessage {
@@ -18,8 +19,6 @@ interface GuestbookMessage {
 const appWindowRef = useTemplateRef<InstanceType<typeof AppWindow>>('appWindow');
 const content = ref('');
 const linkPattern = /https?:\/\/[^\s]+/gi;
-const loading = ref(false);
-const messages = ref<GuestbookMessage[]>([]);
 const name = ref('');
 const showPending = ref(false);
 const status = ref('');
@@ -27,8 +26,17 @@ const submitting = ref(false);
 const token = ref('');
 const turnstileRef = useTemplateRef<InstanceType<typeof Turnstile>>('turnstile');
 const turnstileSiteKey = __TURNSTILE_SITEKEY__;
-
+const { isOpen, appOpenListeners } = useAppOpen();
 const { remaining, start: startCountdown } = useCountdown(0);
+
+const {
+	data: fetchData,
+	isFetching: loading,
+	error: fetchError,
+	execute: read
+} = useFetch(() => `/guestbook/read${get(showPending) ? '?pending=true' : ''}`, { immediate: false }).json<{
+	messages: GuestbookMessage[];
+}>();
 
 const buttonLabel = computed(() => {
 	if (get(submitting)) {
@@ -43,20 +51,6 @@ const buttonLabel = computed(() => {
 	}
 	return parts.length ? parts.join(' ') : 'Submit';
 });
-
-async function read(): Promise<void> {
-	loading.value = true;
-	try {
-		const params = get(showPending) ? '?pending=true' : '';
-		const res = await fetch(`/guestbook/read${params}`);
-		const data = (await res.json()) as { messages: GuestbookMessage[] };
-		messages.value = data.messages;
-	} catch {
-		status.value = 'failed to load messages';
-	} finally {
-		loading.value = false;
-	}
-}
 
 async function write(): Promise<void> {
 	const trimmedName = get(name).trim();
@@ -143,11 +137,15 @@ const menus: OSGUITopLevelMenus = {
 	]
 };
 
-onMounted(read);
+watch(isOpen, (nowOpen) => {
+	if (nowOpen) {
+		read();
+	}
+});
 </script>
 
 <template>
-	<AppWindow ref="appWindow" app-i-d="guestbook" @open="read">
+	<AppWindow ref="appWindow" app-i-d="guestbook" v-on="appOpenListeners">
 		<template #menubar>
 			<MenuBar :menus="menus" />
 		</template>
@@ -172,8 +170,13 @@ onMounted(read);
 				</Button>
 			</form>
 
-			<div v-if="messages.length" class="list">
-				<DynamicScroller ref="scroller" :items="messages" :min-item-size="54" key-field="id" class="scroller">
+			<div v-if="fetchData?.messages?.length" class="list">
+				<DynamicScroller
+					ref="scroller"
+					:items="fetchData!.messages"
+					:min-item-size="54"
+					key-field="id"
+					class="scroller">
 					<template #default="{ item, index, active }">
 						<DynamicScrollerItem :item="item" :active="active" :index="index">
 							<div class="entry" :class="{ pending: item.pending }">
@@ -200,6 +203,7 @@ onMounted(read);
 				</DynamicScroller>
 			</div>
 			<div v-else-if="loading" class="empty">loading...</div>
+			<div v-else-if="fetchError" class="empty">failed to load messages</div>
 			<div v-else class="empty">no entries yet</div>
 		</div>
 	</AppWindow>
