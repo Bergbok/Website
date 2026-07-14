@@ -1,0 +1,1 @@
+[jlp2.3mf](./jlp2.3mf) is from [printables.com](https://printables.com/model/558631-jean-luc-picard-bust), uploaded by [Peter Farell](https://www.printables.com/@PeterFarell) and licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0).
