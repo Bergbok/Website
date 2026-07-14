@@ -10,6 +10,7 @@
 /artifacts/
 /dist/
 /node_modules/
+/src/assets/about/me.json
 /src/assets/audio/dev/*
 !/src/assets/audio/dev/README.md
 /src/assets/images/88x31/unused/*
