@@ -1,0 +1,32 @@
+.scene {
+	display: flex;
+	inset: 0;
+	justify-content: center;
+	position: fixed;
+	z-index: 0;
+}
+
+.scene-centered {
+	align-items: center;
+}
+
+.scene-app {
+	align-items: center;
+	container-type: size;
+	pointer-events: none;
+}
+
+.screen-4-3 {
+	height: min(100dvh, calc(100dvw * 3 / 4));
+	pointer-events: auto;
+	position: relative;
+	width: min(100dvw, calc(100dvh * 4 / 3));
+	--su: min(1cqw, calc(4cqh / 3));
+}
+
+.screen-1-1 {
+	pointer-events: auto;
+	position: relative;
+	height: min(100dvh, 100dvw);
+	width: min(100dvw, 100dvh);
+}
