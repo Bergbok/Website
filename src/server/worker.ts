@@ -23,9 +23,13 @@ export default {
 		const url = new URL(request.url);
 		const { pathname, searchParams } = url;
 
+		void env.D1.prepare(
+			`INSERT INTO Visits (VisitPath, VisitCount) VALUES (?1, '1') ON CONFLICT(VisitPath) DO UPDATE SET VisitCount = CAST(VisitCount AS INTEGER) + 1`
+		)
+			.bind(pathname)
+			.run();
+
 		if (pathname === '/') {
-			const visitorCount = await env.KV.get('visitors');
-			await env.KV.put('visitors', String(Number(visitorCount) + 1));
 			return env.ASSETS.fetch(request);
 		}
 
@@ -177,7 +181,10 @@ export default {
 		}
 
 		if (pathname.startsWith('/visits')) {
-			return new Response(await env.KV.get('visitors'));
+			const row = await env.D1.prepare('SELECT VisitCount FROM Visits WHERE VisitPath = ?')
+				.bind('/')
+				.first<string>('VisitCount');
+			return new Response(row ?? '0');
 		}
 
 		return env.ASSETS.fetch(request);

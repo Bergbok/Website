@@ -6,3 +6,5 @@ CREATE TABLE IF NOT EXISTS Messages (
 	MessagePending BOOLEAN,
 	MessageDate TEXT NOT NULL DEFAULT (datetime('now'))
 );
+DROP TABLE IF EXISTS Visits;
+CREATE TABLE IF NOT EXISTS Visits (VisitPath TEXT PRIMARY KEY, VisitCount TEXT);
