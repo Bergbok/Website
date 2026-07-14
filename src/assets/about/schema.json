@@ -1,0 +1,61 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://bergbok.computer/about/schema.json",
+	"title": "about me",
+	"description": "used for /readme",
+	"type": "object",
+	"properties": {
+		"$schema": {
+			"type": "string",
+			"format": "uri-reference"
+		},
+		"about": {
+			"type": "array",
+			"description": "general things",
+			"items": {
+				"type": "string"
+			}
+		},
+		"likes": {
+			"type": "array",
+			"description": "enjoyable things",
+			"items": {
+				"type": "string"
+			}
+		},
+		"dislikes": {
+			"type": "array",
+			"description": "unpleasant things",
+			"items": {
+				"type": "string"
+			}
+		},
+		"hates": {
+			"type": "array",
+			"description": "very unpleasant things",
+			"items": {
+				"type": "string"
+			}
+		},
+		"hosted": {
+			"type": "array",
+			"description": "self-hosted apps",
+			"items": {
+				"type": "object",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"url": {
+						"type": "string",
+						"format": "uri"
+					}
+				},
+				"required": ["name"],
+				"additionalProperties": false
+			}
+		}
+	},
+	"required": ["likes", "dislikes"],
+	"additionalProperties": false
+}
