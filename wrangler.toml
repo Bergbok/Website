@@ -11,6 +11,7 @@ binding = 'ASSETS'
 not_found_handling = 'single-page-application'
 run_worker_first = [
 	'/',
+	'/about',
 	'/cat',
 	'/deep-thought/*',
 	'/diablo-relay',
@@ -29,6 +30,10 @@ run_worker_first = [
 	'/version',
 	'/visits'
 ]
+
+[cache]
+enabled = true
+cross_version_cache = true
 
 [[d1_databases]]
 binding = 'D1'
