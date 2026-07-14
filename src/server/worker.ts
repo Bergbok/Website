@@ -29,6 +29,11 @@ export default {
 			return env.ASSETS.fetch(request);
 		}
 
+		if (pathname === '/about') {
+			const about = await env.KV.get('about', { type: 'json' });
+			return Response.json(about);
+		}
+
 		if (pathname === '/cat') {
 			const cat = new URL(cats[Math.floor(Math.random() * cats.length)]!, request.url);
 			return Response.redirect(cat.toString(), 302);
