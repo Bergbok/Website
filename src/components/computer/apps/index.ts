@@ -454,10 +454,7 @@ export const APPS = defineApps({
 	},
 	namegen: {
 		label: 'Name Generator',
-		component: iframe({
-			appID: 'namegen',
-			iframeOptions: { src: '/namegen' }
-		}),
+		component: defineAsyncComponent(async () => import('@compunents/apps/Namegen.vue')),
 		icon: ـ.markovchain,
 		position: { x: 2, y: 6, width: 660, height: 660 }
 	},

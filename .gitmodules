@@ -81,7 +81,7 @@
 	url = https://github.com/SajagIN/Minecraft-classic.git
 	ignore = dirty
 [submodule "src/lib/namegen"]
-	path = src/lib/namegen
+	path = src/lib/namegen/src
 	url = https://github.com/Tw1ddle/MarkovNameGenerator.git
 	ignore = dirty
 [submodule "src/lib/noclip"]
