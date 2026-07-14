@@ -41,25 +41,17 @@ export type AppPosition = GridStackPosition & {
 export type AppRouteSpec = string | false;
 
 export interface AppEntry {
-	/** Optional for link apps - Grid renders the shared LinkApp fallback when omitted. */
 	component?: Component;
 	position: AppPosition;
-	/**
-	 * Human-readable label. A plain string is used everywhere; an object allows separate values for the desktop icon vs
-	 * the window titlebar/taskbar.
-	 */
 	label: string | { icon: string; window: string };
 	icon?: AppIcon;
-	/** Multi-resolution icon set. Takes precedence over `icon` when both present. */
-	icons?: Record<number | 'any', string>;
-	/** Keep the component mounted when app is closed. */
+	/** keep the component mounted when app is closed */
 	persistent?: boolean;
 	singleton?: boolean;
-	/** Route configuration (see {@link AppRouteSpec}). */
+	/** route configuration (see {@link AppRouteSpec}) */
 	route?: AppRouteSpec;
-	/** Link target URL. When present and `component` is omitted, a link icon is rendered. */
 	link?: AppLink;
-	/** Defaults to `'window'`. */
+	/** defaults to `'window'` */
 	chrome?: AppChrome;
 }
 

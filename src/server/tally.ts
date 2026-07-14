@@ -1,9 +1,6 @@
 import { Actor } from '@cloudflare/actors';
 import type { ActorConfiguration } from '@cloudflare/actors';
 
-// Wire protocol (JSON text frames over WebSocket at `/tally`):
-// S→C  { type: 'count', value: number }   (on connect + every change)
-// C→S  { type: 'increment' }              (open the icon → +1)
 export class Tally extends Actor<Env> {
 	public static override configuration(): ActorConfiguration {
 		return { sockets: { upgradePath: '/tally' } };

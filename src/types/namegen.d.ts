@@ -1,24 +1,24 @@
 export interface GenerateOptions {
-	/** Highest order of model to use - models of order 1 through order will be generated. */
+	/** highest order of model to use - models of order 1 through order will be generated */
 	order?: number;
-	/** The dirichlet prior/additive smoothing "randomness" factor. */
+	/** the dirichlet prior/additive smoothing "randomness" factor */
 	prior?: number;
-	/** Whether to fall back to lower order models when the highest order model fails to generate a letter. */
+	/** whether to fall back to lower order models when the highest order model fails to generate a letter */
 	backoff?: boolean;
-	/** The minimum length of the word. */
+	/** the minimum length of the word */
 	minLength?: number;
-	/** The maximum length of the word. */
+	/** the maximum length of the word */
 	maxLength?: number;
-	/** The text the word must start with. */
+	/** the text the word must start with */
 	startsWith?: string;
-	/** The text the word must end with. */
+	/** the text the word must end with */
 	endsWith?: string;
-	/** The text the word must include. */
+	/** the text the word must include */
 	includes?: string;
-	/** The text the word must exclude. */
+	/** the text the word must exclude */
 	excludes?: string;
 	regexMatch?: string;
-	/** The maximum time in seconds to spend generating each name. */
+	/** the maximum time in seconds to spend generating each name */
 	maxTimePerName?: number;
 }
 

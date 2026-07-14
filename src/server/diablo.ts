@@ -253,7 +253,7 @@ export class Diablo extends Actor<Env> {
 			try {
 				ws.close(1000, 'leave');
 			} catch {
-				/* ignore */
+				/*_*/
 			}
 			return;
 		}
@@ -271,7 +271,7 @@ export class Diablo extends Actor<Env> {
 		try {
 			ws.close(1000, 'leave');
 		} catch {
-			/* ignore */
+			/*_*/
 		}
 		if (wasHost) {
 			this.sessions.delete(session);
