@@ -210,7 +210,7 @@ export const APPS = defineApps({
 	},
 	github: {
 		label: 'GitHub',
-		link: 'https://github.com/Bergbok/Website',
+		link: 'https://github.com/Bergbok/Computer',
 		icon: {
 			icon: ـ.github,
 			shaderOptions: { glowColor: '#fff', shapeSdfUrl: ـ.githubSDF }

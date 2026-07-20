@@ -166,7 +166,7 @@ const buttonsMetadata: Record<string, { ignore?: boolean; href?: string; title?:
 		title: 'Internet Privacy NOW!'
 	},
 	isitslowsayso: {
-		href: 'https://github.com/Bergbok/Website/issues',
+		href: 'https://github.com/Bergbok/Computer/issues',
 		title: 'Is it SLOW? SAY SO!'
 	},
 	izzy: {
@@ -246,7 +246,7 @@ watch(isOpen, (nowOpen) => {
 		<section class="body">
 			<p class="intro">
 				hi. hope you like my website. if you do give it a star
-				<a href="https://github.com/Bergbok/Website" target="_blank"> on github</a> :)
+				<a href="https://github.com/Bergbok/Computer" target="_blank"> on github</a> :)
 			</p>
 
 			<details>

@@ -29,7 +29,7 @@ useHead({
 		{
 			rel: 'license',
 			title: 'ISC',
-			href: 'https://github.com/Bergbok/Website/blob/main/LICENSE.md'
+			href: 'https://github.com/Bergbok/Computer/blob/main/LICENSE.md'
 		},
 		{
 			rel: 'search',
