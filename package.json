@@ -89,7 +89,7 @@
 		"oxlint-tsgolint": "^0.22.1",
 		"parse5": "^8.0.1",
 		"parse5-htmlparser2-tree-adapter": "^8.0.1",
-		"typescript": "^6.0.3",
+		"typescript": "^7.0.2",
 		"unplugin-fonts": "^2.0.0",
 		"vite": "^8.0.10",
 		"vite-plugin-cloudflare-redirect": "^1.0.3",
