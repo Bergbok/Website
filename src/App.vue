@@ -51,7 +51,7 @@ useSeoMeta({
 	ogImageType: 'image/avif',
 	ogImageWidth: '1280',
 	ogImageHeight: '640',
-	ogSiteName: "bergbok's computer",
+	ogSiteName: 'bergbok dot computer',
 	ogLocale: 'en_ZA'
 });
 
