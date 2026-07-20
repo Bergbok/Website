@@ -95,7 +95,7 @@
 		"vite-plugin-cloudflare-redirect": "^1.0.3",
 		"vite-plugin-html": "^3.2.2",
 		"vite-plugin-vue-devtools": "^8.1.1",
-		"vue-tsc": "^3.2.8",
+		"vue-tsc": "^3.3.7",
 		"wrangler": "^4.110.0"
 	},
 	"overrides": {
