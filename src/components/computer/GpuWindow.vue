@@ -71,8 +71,8 @@ watch(
 	{ immediate: true }
 );
 
+provide('gpuio-canvas', canvasEl);
 provide('gpuio-composer', composer);
-provide('canvas', canvasEl);
 provide('gpuio-registerLoop', registerLoop);
 provide('gpuio-unregisterLoop', unregisterLoop);
 provide('gpuio-onResize', onResize);
