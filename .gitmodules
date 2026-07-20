@@ -1,38 +1,38 @@
-[submodule "src/lib/animalcrossing"]
+[submodule "Animal Crossing"]
 	path = src/lib/animalcrossing
 	url = https://github.com/turtlekiosk/slider.git
 	branch = wasm
 	ignore = dirty
-[submodule "src/lib/audiorbits"]
+[submodule "AudiOrbits"]
 	path = src/lib/audiorbits
 	url = https://github.com/hexxone/audiorbits
 	branch = 2.3.x
 	ignore = dirty
-[submodule "src/lib/bassoontracker"]
+[submodule "BassoonTracker"]
 	path = src/lib/bassoontracker
 	url = https://github.com/steffest/BassoonTracker.git
 	ignore = dirty
-[submodule "src/lib/bathbomb"]
+[submodule "Bath Bomb Fluid"]
 	path = src/lib/bathbomb
 	url = https://github.com/ollyc2015/BathBombFluidDynamics.git
 	ignore = dirty
-[submodule "src/lib/celeste"]
+[submodule "Celeste"]
 	path = src/lib/celeste
 	url = https://github.com/MercuryWorkshop/celeste-wasm.git
 	ignore = dirty
-[submodule "src/lib/crossyroad"]
+[submodule "Crossy Road"]
 	path = src/lib/crossyroad
 	url = https://github.com/EvanBacon/Expo-Crossy-Road.git
 	ignore = dirty
-[submodule "src/lib/diablo"]
+[submodule "Diablo"]
 	path = src/lib/diablo
 	url = https://github.com/awest813/OpenTristam.git
 	ignore = dirty
-[submodule "src/lib/doom"]
+[submodule "DOOM"]
 	path = src/lib/doom
 	url = https://github.com/GMH-Code/Dwasm.git
 	ignore = dirty
-[submodule "src/lib/fluidpaint"]
+[submodule "Fluid Paint"]
 	path = src/lib/fluidpaint
 	url = https://github.com/dli/paint.git
 	ignore = dirty
@@ -40,111 +40,111 @@
 	path = src/lib/fluidsimulation
 	url = https://github.com/PavelDoGreat/WebGL-Fluid-Simulation.git
 	ignore = dirty
-[submodule "src/lib/geometrydash"]
+[submodule "Geometry Dash"]
 	path = src/lib/geometrydash
 	url = https://github.com/web-dashers/web-dashers.github.io.git
 	ignore = dirty
-[submodule "src/lib/godot"]
+[submodule "Godot"]
 	path = src/lib/godot
 	url = https://github.com/godotengine/godot.git
 	branch = 4.6
 	ignore = dirty
-[submodule "src/lib/jspaint"]
+[submodule "JS Paint"]
 	path = src/lib/jspaint
 	url = https://github.com/1j01/jspaint.git
 	ignore = dirty
-[submodule "src/lib/life"]
+[submodule "Colorful Life"]
 	path = src/lib/life
 	url = https://github.com/jaxry/colorful-life.git
 	ignore = dirty
-[submodule "src/lib/marbleblast/gold"]
+[submodule "Marble Blast Gold"]
 	path = src/lib/marbleblast/gold
 	url = https://github.com/RandomityGuy/MBHaxe.git
 	branch = mbg
 	ignore = dirty
-[submodule "src/lib/marbleblast/platinum"]
+[submodule "Marble Blast Platinum"]
 	path = src/lib/marbleblast/platinum
 	url = https://github.com/RandomityGuy/MBHaxe.git
 	branch = master
 	ignore = dirty
-[submodule "src/lib/marbleblast/ultra"]
+[submodule "Marble Blast Ultra"]
 	path = src/lib/marbleblast/ultra
 	url = https://github.com/RandomityGuy/MBHaxe.git
 	branch = mbu-port
 	ignore = dirty
-[submodule "src/lib/matrix"]
+[submodule "Matrix"]
 	path = src/lib/matrix
 	url = https://github.com/Rezmason/matrix.git
 	ignore = dirty
-[submodule "src/lib/minecraft"]
+[submodule "Minecraft"]
 	path = src/lib/minecraft
 	url = https://github.com/SajagIN/Minecraft-classic.git
 	ignore = dirty
-[submodule "src/lib/namegen"]
+[submodule "Namegen"]
 	path = src/lib/namegen/src
 	url = https://github.com/Tw1ddle/MarkovNameGenerator.git
 	ignore = dirty
-[submodule "src/lib/noclip"]
+[submodule "noclip"]
 	path = src/lib/noclip
 	url = https://github.com/magcius/noclip.website.git
 	ignore = dirty
-[submodule "src/lib/oimo"]
+[submodule "Oimo Works"]
 	path = src/lib/oimo
 	url = https://github.com/saharan/works.git
 	ignore = dirty
-[submodule "src/lib/oimo/libs"]
+[submodule "Oimo Libraries"]
 	path = src/lib/oimo/libs
 	url = https://github.com/saharan/haxelibs.git
 	ignore = dirty
-[submodule "src/lib/openrct2"]
+[submodule "OpenRCT2"]
 	path = src/lib/openrct2
 	url = https://github.com/OpenRCT2/OpenRCT2.git
 	ignore = dirty
-[submodule "src/lib/openttd"]
+[submodule "OpenTTD"]
 	path = src/lib/openttd
 	url = https://github.com/swords02/openttd-online.git
 	ignore = dirty
-[submodule "src/lib/pipes"]
+[submodule "3D Pipes"]
 	path = src/lib/pipes
 	url = https://github.com/1j01/pipes.git
 	ignore = dirty
-[submodule "src/lib/pixelsynth"]
+[submodule "PIXELSYNTH"]
 	path = src/lib/pixelsynth
 	url = https://github.com/ojack/PIXELSYNTH.git
 	ignore = dirty
-[submodule "src/lib/quake"]
+[submodule "Quake"]
 	path = src/lib/quake
 	url = https://github.com/GMH-Code/Qwasm.git
 	ignore = dirty
-[submodule "src/lib/quake2"]
+[submodule "Quake 2"]
 	path = src/lib/quake2
 	url = https://github.com/GMH-Code/Qwasm2.git
 	ignore = dirty
-[submodule "src/lib/realm"]
+[submodule "Realm"]
 	path = src/lib/realm
 	url = https://github.com/jaxry/realm.git
 	ignore = dirty
-[submodule "src/lib/sgi-demos"]
+[submodule "SGI Demos"]
 	path = src/lib/sgi-demos
 	url = https://github.com/sgi-demos/sgi-demos.git
 	ignore = dirty
-[submodule "src/lib/silk"]
+[submodule "Silk"]
 	path = src/lib/silk
 	url = https://github.com/qumoptly/silk.git
 	ignore = dirty
-[submodule "src/lib/spacecadetpinball"]
+[submodule "Space Cadet Pinball"]
 	path = src/lib/spacecadetpinball
 	url = https://github.com/alula/SpaceCadetPinball.git
 	ignore = dirty
-[submodule "src/lib/thepowdertoy"]
+[submodule "The Powder Toy"]
 	path = src/lib/thepowdertoy
 	url = https://github.com/The-Powder-Toy/The-Powder-Toy.git
 	ignore = dirty
-[submodule "src/lib/untrusted"]
+[submodule "Untrusted"]
 	path = src/lib/untrusted
 	url = https://github.com/AlexNisnevich/untrusted.git
 	ignore = dirty
-[submodule "src/lib/wipEout"]
+[submodule "wipEout"]
 	path = src/lib/wipEout
 	url = https://github.com/phoboslab/wipeout-rewrite.git
 	ignore = dirty
