@@ -61,13 +61,13 @@
 - [Windows 98](https://en.wikipedia.org/wiki/Windows_98)
 - [wipEout](https://github.com/phoboslab/wipeout-rewrite)
 
-and [more](https://github.com/Bergbok/Website/network/dependencies)!
+and [more](https://github.com/Bergbok/Computer/network/dependencies)!
 
 ### Running Locally
 
 ```bash
 # requires bun, docker, dotnet, emscripten, jq, haxe, node, mono, rustup, uv & yq :)
-git clone --recurse-submodules https://github.com/Bergbok/Website.git && cd Website
+git clone --recurse-submodules https://github.com/Bergbok/Computer.git && cd Computer
 bun install
 bun typegen
 ???
